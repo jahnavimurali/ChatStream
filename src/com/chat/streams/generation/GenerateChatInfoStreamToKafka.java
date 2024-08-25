@@ -74,7 +74,7 @@ public class GenerateChatInfoStreamToKafka {
                 TestKafkaProducer.sendDataToKafka("chatstream", chatStream.toString(), chatStream.getMessageId());
             }
             System.out.println(recordsCount + " records Sent to Kafka.");
-            Thread.sleep(10000);
+            Thread.sleep(100);
         }
     }
 }
